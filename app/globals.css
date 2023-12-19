@@ -1,27 +1,47 @@
+/* INITIALIZING TAILWIND CSS PROCESSORS */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+/* INITIALIZING CUSTOM FONT FACE */
+@font-face {
+  font-family: "Satoshi Black";
+  src: url("../public/fonts/WOFF/Satoshi-Black.woff"),
+    url("../public/fonts/WOFF2/Satoshi-Black.woff2"),
+    url("../public/fonts/OTF/Satoshi-Black.otf");
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+@font-face {
+  font-family: "Satoshi Bold";
+  src: url("../public/fonts/WOFF/Satoshi-Bold.woff"),
+    url("../public/fonts/WOFF2/Satoshi-Bold.woff2"),
+    url("../public/fonts/OTF/Satoshi-Bold.otf");
 }
 
+@font-face {
+  font-family: "Satoshi Medium";
+  src: url("../public/fonts/WOFF/Satoshi-Medium.woff"),
+    url("../public/fonts/WOFF2/Satoshi-Medium.woff2"),
+    url("../public/fonts/OTF/Satoshi-Medium.otf");
+}
+
+@font-face {
+  font-family: "Satoshi Regular";
+  src: url("../public/fonts/WOFF/Satoshi-Regular.woff"),
+    url("../public/fonts/WOFF2/Satoshi-Regular.woff2"),
+    url("../public/fonts/OTF/Satoshi-Regular.otf");
+}
+
+@font-face {
+  font-family: "Satoshi Light";
+  src: url("../public/fonts/WOFF/Satoshi-Light.woff"),
+    url("../public/fonts/WOFF2/Satoshi-Light.woff2"),
+    url("../public/fonts/OTF/Satoshi-Light.otf");
+}
+
+html,
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  padding: 0;
+  margin: 0;
+  background-color: #060918;
 }
