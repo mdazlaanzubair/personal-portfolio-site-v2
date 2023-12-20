@@ -7,7 +7,7 @@ export const ThemeContext = createContext();
 
 export const ThemeProvider = ({ children }) => {
   // THEME STATE
-  const [theme, setTheme] = useState("dark");
+  const [isDark, setIsDark] = useState(true);
 
   // COMPONENT MOUNT STATE
   const [isMounted, setIsMounted] = useState(false);
@@ -18,27 +18,36 @@ export const ThemeProvider = ({ children }) => {
     setIsMounted(true);
 
     // THEME SETTING TO LOCAL STORAGE
-    const storedTheme = localStorage.getItem("theme") || "light";
+    const storedThemeChoice = localStorage.getItem("isDark");
 
     // SETTING LOCAL STORAGE THEME IN LOCAL STATE
-    setTheme(storedTheme);
+    setIsDark(storedThemeChoice === "false" ? false : true);
+    // if (storedThemeChoice) {
+    //   if (storedThemeChoice === "false") {
+    //     setIsDark(false);
+    //   } else {
+    //     setIsDark(true);
+    //   }
+    // } else {
+    //   setIsDark(true);
+    // }
   }, []);
 
   // SHOW LOADED UNTIL COMPONENT NOT MOUNT
   !isMounted && <Loader />;
 
-  // FUNCTION TO TOGGLE BETWEEN THEMES BASED ON USER SELECTION
-  const changeTheme = (theme) => {
-    // SETTING USER SELECTED THEME IN LOCAL STATE
-    setTheme(theme);
+  // FUNCTION TO TOGGLE BETWEEN LIGHT AND DARK MODE BASED ON USER SELECTION
+  const changeTheme = () => {
+    // SETTING UPDATED CHOICE IN LOCAL STATE
+    setIsDark(!isDark);
 
-    // SETTING USER SELECTED THEME IN LOCAL STORAGE
-    localStorage.setItem("theme", theme);
+    // SETTING UPDATED CHOICE IN LOCAL STORAGE
+    localStorage.setItem("isDark", !isDark);
   };
 
   // RETURNING THEME CONTEXT PROVIDER
   return (
-    <ThemeContext.Provider value={(theme, changeTheme)}>
+    <ThemeContext.Provider value={{ isDark, changeTheme }}>
       {children}
     </ThemeContext.Provider>
   );
