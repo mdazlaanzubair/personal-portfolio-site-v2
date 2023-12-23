@@ -22,15 +22,6 @@ export const ThemeProvider = ({ children }) => {
 
     // SETTING LOCAL STORAGE THEME IN LOCAL STATE
     setIsDark(storedThemeChoice === "false" ? false : true);
-    // if (storedThemeChoice) {
-    //   if (storedThemeChoice === "false") {
-    //     setIsDark(false);
-    //   } else {
-    //     setIsDark(true);
-    //   }
-    // } else {
-    //   setIsDark(true);
-    // }
   }, []);
 
   // SHOW LOADED UNTIL COMPONENT NOT MOUNT

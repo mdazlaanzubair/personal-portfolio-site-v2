@@ -7,7 +7,7 @@ const ThemeToggler = () => {
   const { changeTheme } = useContext(ThemeContext);
 
   return (
-    <label className="swap swap-rotate">
+    <label className="swap swap-rotate mx-3">
       {/* this hidden checkbox controls the state */}
       <input type="checkbox" onChange={changeTheme} />
 

@@ -45,3 +45,42 @@ body {
   margin: 0;
   background-color: #060918;
 }
+
+html::-webkit-scrollbar {
+  display: none;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+/* width */
+#view-port::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+}
+
+/* Track */
+#view-port::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+/* Handle */
+#view-port::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 4px;
+}
+
+/* Handle on hover */
+#view-port::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Hide scrollbar on mobile */
+@media only screen and (max-width: 768px) {
+  #view-port::-webkit-scrollbar {
+    display: none;
+  }
+}

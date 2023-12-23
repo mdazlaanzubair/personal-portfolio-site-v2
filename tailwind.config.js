@@ -27,7 +27,37 @@ module.exports = {
 
   // daisyUI config (optional - here are the default values)
   daisyui: {
-    themes: ["light", "dark"], // false: only light + dark | true: all themes | array: specific themes like this ["light", "dark", "cupcake"]
+    themes: [
+      "winter",
+      {
+        light: {
+          ...require("daisyui/src/theming/themes")["winter"],
+          // CUSTOM COLOR THEME
+          primary: "#060918",
+          secondary: "#919BBA",
+          accent: "#6919FF",
+          neutral: "#F6F7FA",
+          "base-100": "#FFFFFF",
+          info: "#0284c7",
+          success: "#22c55e",
+          warning: "#ca8a04",
+          error: "#b91c1c",
+        },
+        dark: {
+          ...require("daisyui/src/theming/themes")["night"],
+          // CUSTOM COLOR THEME
+          primary: "#F6F7FA",
+          secondary: "#919BBA",
+          accent: "#6919FF",
+          neutral: "#03050c",
+          "base-100": "#060918",
+          info: "#0284c7",
+          success: "#22c55e",
+          warning: "#ca8a04",
+          error: "#b91c1c",
+        },
+      },
+    ], // false: only light + dark | true: all themes | array: specific themes like this ["light", "dark", "cupcake"]
     darkTheme: "dark", // name of one of the included themes for dark mode
     base: true, // applies background color and foreground color for root element by default
     styled: true, // include daisyUI colors and design decisions for all components
