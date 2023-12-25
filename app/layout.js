@@ -1,5 +1,5 @@
-import { ThemeProvider } from "./context/ThemeContext";
-import ThemeWrapper from "./context/ThemeWrapper";
+import { ThemeProvider } from "../context/ThemeContext";
+import ThemeWrapper from "../context/ThemeWrapper";
 import "./globals.css";
 
 export const metadata = {

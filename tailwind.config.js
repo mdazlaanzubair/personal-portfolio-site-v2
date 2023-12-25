@@ -23,7 +23,7 @@ module.exports = {
   },
 
   // add daisyUI plugin
-  plugins: [require("daisyui")],
+  plugins: [require("daisyui"), require("tailwindcss-animation-delay")],
 
   // daisyUI config (optional - here are the default values)
   daisyui: {
@@ -33,11 +33,11 @@ module.exports = {
         light: {
           ...require("daisyui/src/theming/themes")["winter"],
           // CUSTOM COLOR THEME
-          primary: "#060918",
+          primary: "#F6F7FA",
           secondary: "#919BBA",
           accent: "#6919FF",
-          neutral: "#F6F7FA",
-          "base-100": "#FFFFFF",
+          neutral: "#03050c",
+          "base-100": "#060918",
           info: "#0284c7",
           success: "#22c55e",
           warning: "#ca8a04",

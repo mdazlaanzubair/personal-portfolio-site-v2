@@ -1,6 +1,6 @@
 "use client";
 
-import { DrawerContext } from "@/app/context/DrawerContext";
+import { DrawerContext } from "@/context/DrawerContext";
 import React, { useContext } from "react";
 
 const NavToggler = () => {

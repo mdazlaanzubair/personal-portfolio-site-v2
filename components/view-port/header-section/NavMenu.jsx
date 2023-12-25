@@ -19,8 +19,8 @@ const NavMenu = () => {
       url: "#services-section",
     },
     {
-      title: "Projects",
-      url: "#projects-section",
+      title: "Portfolio",
+      url: "#portfolio-section",
     },
     // {
     //   title: "Testimonial",

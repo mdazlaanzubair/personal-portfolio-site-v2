@@ -1,11 +1,9 @@
 import React from "react";
 import {
   H1,
-  H2,
   H3,
   LinkText,
   P1,
-  P2,
   SolidButtonLink,
   TextHighlighter,
 } from "../../common/TypoAndUtils";
@@ -17,7 +15,7 @@ const HeroSection = () => {
         <div className="max-w-full">
           <H1>Hi! I&apos;m Azlaan</H1>
         </div>
-        <div className="max-w-xl">
+        <div className="max-w-2xl">
           <H3>I offer User-Centric Solutions with Pixel-Powered Innovation</H3>
         </div>
         <div className="max-w-xl mx-auto">

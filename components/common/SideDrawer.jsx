@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useContext } from "react";
-import { DrawerContext } from "@/app/context/DrawerContext";
+import { DrawerContext } from "@/context/DrawerContext";
 
 const SideDrawer = () => {
   const nav_links = [
