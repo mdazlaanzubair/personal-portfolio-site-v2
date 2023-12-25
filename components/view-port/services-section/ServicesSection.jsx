@@ -23,7 +23,7 @@ const ServicesSection = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 justify-center gap-10 my-10 xl:my-20">
           {services?.map((service, index) => (
-            <ServiceCard index={index} service={service} />
+            <ServiceCard key={index} service={service} />
           ))}
         </div>
       </div>
