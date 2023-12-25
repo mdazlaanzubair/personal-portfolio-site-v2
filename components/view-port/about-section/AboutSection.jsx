@@ -1,6 +1,4 @@
 import React from "react";
-import * as yoga_animation from "@/public/animation/yoga_animation.json";
-import Animator from "../../common/Animator";
 import {
   H1,
   H3,
@@ -10,14 +8,16 @@ import {
   SolidButtonLink,
   TextHighlighter,
 } from "../../common/TypoAndUtils";
+import TechSphere from "@/components/common/TechSphere";
+import { tech_sphere_logos } from "@/utils/img-exporter";
 
 const AboutSection = () => {
   return (
     <div id="about-section" className="hero min-h-screen">
-      <div className="hero-content">
-        <div className="max-w-full justify-start px-0 md:px-10 lg:px-20 flex flex-col lg:flex-row-reverse gap-3">
+      <div className="hero-content pt-28 pb-20">
+        <div className="max-w-full flex flex-col lg:flex-row justify-between px-0 md:px-10 lg:px-20 gap-20">
           <div>
-            <Animator animation={yoga_animation.default} />
+            <TechSphere entries={tech_sphere_logos} />
           </div>
           <div className="max-w-md">
             <div className="mb-5">

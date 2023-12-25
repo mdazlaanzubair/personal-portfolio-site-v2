@@ -1,7 +1,7 @@
 import React from "react";
 
 import { services } from "@/utils/img-exporter";
-import ServiceCard from "./ServiceCard";
+import ServiceCard from "./ProjectCard";
 import {
   H2,
   H1,
@@ -11,9 +11,9 @@ import {
   TextHighlighter,
 } from "@/components/common/TypoAndUtils";
 
-const ServicesGrid = () => {
+const ProjectsGrid = () => {
   return (
-    <div className="group cursor-pointer grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 justify-center gap-10 my-5 xl:my-10">
+    <div className="group grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 justify-center gap-10 my-10 xl:my-20">
       <div className="col-span-2 text-start flex flex-col justify-center rounded-3xl bg-gradient-to-br from-primary/5 via-secondary/5 to-base-100/5 bg-opacity-10 backdrop-blur-md">
         <div className="card card-compact m-5">
           <div className="card-body">
@@ -41,4 +41,4 @@ const ServicesGrid = () => {
   );
 };
 
-export default ServicesGrid;
+export default ProjectsGrid;

@@ -33,11 +33,11 @@ module.exports = {
         light: {
           ...require("daisyui/src/theming/themes")["winter"],
           // CUSTOM COLOR THEME
-          primary: "#F6F7FA",
-          secondary: "#919BBA",
+          primary: "#000000",
+          secondary: "#555555",
           accent: "#6919FF",
-          neutral: "#03050c",
-          "base-100": "#060918",
+          neutral: "#919BBA",
+          "base-100": "#F6F7FA",
           info: "#0284c7",
           success: "#22c55e",
           warning: "#ca8a04",

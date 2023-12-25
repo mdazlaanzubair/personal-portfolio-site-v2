@@ -37,7 +37,7 @@ export const P3 = ({ children }) => (
 );
 
 export const TextHighlighter = ({ children }) => (
-  <span className="text-primary">{children}</span>
+  <span className="font-satoshi-bold text-primary">{children}</span>
 );
 
 export const LinkText = ({ link, text }) => (

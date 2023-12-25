@@ -5,8 +5,8 @@ import ServicesGrid from "./ServicesGrid";
 const ServicesSection = () => {
   return (
     <div id="services-section" className="hero min-h-screen">
-      <div className="hero-content flex-col text-center pt-20">
-        <div className="max-w-full">
+      <div className="hero-content flex-col text-center pt-28 pb-20">
+        <div className="max-w-3xl">
           <H1>I Offer Solutions that makes Difference</H1>
         </div>
         <div className="max-w-3xl mx-auto">

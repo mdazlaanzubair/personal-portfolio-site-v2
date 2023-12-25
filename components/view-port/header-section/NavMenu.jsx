@@ -20,7 +20,7 @@ const NavMenu = () => {
     },
     {
       title: "Portfolio",
-      url: "#portfolio-section",
+      url: "#project-section",
     },
     // {
     //   title: "Testimonial",

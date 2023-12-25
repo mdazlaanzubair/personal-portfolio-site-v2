@@ -3,6 +3,7 @@ import AboutSection from "@/components/view-port/about-section/AboutSection";
 import Footer from "@/components/view-port/footer-section/Footer";
 import Navbar from "@/components/view-port/header-section/Navbar";
 import HeroSection from "@/components/view-port/hero-section/HeroSection";
+import ProjectsSection from "@/components/view-port/projects-section/ProjectsSection";
 import HireMe from "@/components/view-port/section-divider/call-to-action/HireMe";
 import KnowMe from "@/components/view-port/section-divider/call-to-action/KnowMe";
 import LogoSlider from "@/components/view-port/section-divider/logo-slider/LogoSlider";
@@ -19,18 +20,19 @@ export default function Home() {
         </DrawerProvider>
         <div
           id="view-port"
-          className="container my-auto max-h-[25.6rem] md:max-h-[25.6rem] lg:max-h-[31rem] 2xl:max-h-[59rem] overflow-y-scroll scroll-smooth"
-          style={{
-            maskImage:
-              "linear-gradient(180deg, transparent, #ffffff, #ffffff, transparent)",
-          }}
+          className="container my-auto max-h-[25.6rem] md:max-h-[25.6rem] lg:max-h-[30rem] 2xl:max-h-[59rem] overflow-y-scroll scroll-smooth"
+          // style={{
+          //   maskImage:
+          //     "linear-gradient(180deg, rgba(255,255,255,0), rgba(255,255,255,0.95), rgba(255,255,255,1), rgba(255,255,255,0.95), rgba(255,255,255,0))",
+          // }}
         >
-          {/* <HeroSection />
+          <HeroSection />
           <LogoSlider />
-          <AboutSection /> */}
+          <AboutSection />
           <KnowMe />
           <ServicesSection />
           <HireMe />
+          <ProjectsSection />
         </div>
         <Footer />
       </div>
