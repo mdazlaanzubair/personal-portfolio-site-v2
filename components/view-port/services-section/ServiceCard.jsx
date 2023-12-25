@@ -9,7 +9,7 @@ const ServiceCard = ({ service }) => {
 
   const handleMouseMove = (e) => {
     const cardRect = e.currentTarget.getBoundingClientRect();
-    
+
     setPosition({
       x: e.clientX - cardRect.left,
       y: e.clientY - cardRect.top,
@@ -18,7 +18,7 @@ const ServiceCard = ({ service }) => {
 
   return (
     <div
-      className="group relative col-span-1 text-start rounded-3xl bg-gradient-to-br from-primary/5 via-secondary/5 to-base-100/5 bg-opacity-10 backdrop-blur-md"
+      className="relative col-span-1 text-start rounded-3xl bg-gradient-to-br from-primary/5 via-secondary/5 to-base-100/5 bg-opacity-10 backdrop-blur-md group-hover:blur-sm group-hover:scale-[.95] hover:!scale-100 hover:!blur-none transition-all ease-in-out duration-300"
       onMouseMove={handleMouseMove}
       onMouseEnter={() => setIsMouseOnCard(true)}
       onMouseLeave={() => setIsMouseOnCard(false)}
@@ -28,10 +28,11 @@ const ServiceCard = ({ service }) => {
           isMouseOnCard ? "opacity-100" : "opacity-0"
         } transition-all ease-in-out duration-700`}
         style={{
-          background: `radial-gradient(circle at ${position.x}px ${position.y}px, rgba(105, 25, 255, .1) 7%, transparent,transparent )`,
+          // background: `radial-gradient(circle at ${position.x}px ${position.y}px, rgba(105, 25, 255, .1) 7%, transparent, transparent )`,
+          background: `radial-gradient(circle at ${position.x}px ${position.y}px, rgba(255, 255, 255, .1) 7%, transparent, transparent )`,
         }}
       />
-      <div className="card card-compact m-10">
+      <div className="card card-compact m-5">
         <div className="card-body relative">
           <figure className="w-16 h-16 bg-accent shadow-glow rounded-xl text-center mb-5">
             <img

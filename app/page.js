@@ -25,9 +25,9 @@ export default function Home() {
               "linear-gradient(180deg, transparent, #ffffff, #ffffff, transparent)",
           }}
         >
-          <HeroSection />
+          {/* <HeroSection />
           <LogoSlider />
-          <AboutSection />
+          <AboutSection /> */}
           <KnowMe />
           <ServicesSection />
           <HireMe />

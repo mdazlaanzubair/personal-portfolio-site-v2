@@ -1,7 +1,6 @@
 import React from "react";
 import { H1, P1, TextHighlighter } from "../../common/TypoAndUtils";
-import { services } from "@/utils/img-exporter";
-import ServiceCard from "./ServiceCard";
+import ServicesGrid from "./ServicesGrid";
 
 const ServicesSection = () => {
   return (
@@ -21,11 +20,7 @@ const ServicesSection = () => {
           </P1>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 justify-center gap-10 my-10 xl:my-20">
-          {services?.map((service, index) => (
-            <ServiceCard key={index} service={service} />
-          ))}
-        </div>
+        <ServicesGrid />
       </div>
     </div>
   );
