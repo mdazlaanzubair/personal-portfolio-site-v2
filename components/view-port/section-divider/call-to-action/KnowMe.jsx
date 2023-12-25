@@ -1,4 +1,4 @@
-import { H3, P1, SolidButtonLink } from "@/components/common/TypoAndUtils";
+import { H3, P1 } from "@/components/common/TypoAndUtils";
 import Link from "next/link";
 
 const KnowMe = () => {
@@ -15,7 +15,7 @@ const KnowMe = () => {
       <div className="max-w-lg text-center">
         <P1>
           <span className="text-base-100">
-            I'm driven by the opportunity to collaborate with friendly and
+            I&apos;m driven by the opportunity to collaborate with friendly and
             experienced professionals to solve real-world problems.
           </span>
         </P1>

@@ -1,4 +1,4 @@
-import { H3, P1, SolidButtonLink } from "@/components/common/TypoAndUtils";
+import { H3, P1 } from "@/components/common/TypoAndUtils";
 import Link from "next/link";
 
 const HireMe = () => {
@@ -15,8 +15,8 @@ const HireMe = () => {
       <div className="max-w-lg text-center">
         <P1>
           <span className="text-base-100">
-            I’ve proven track record of success. I’ve worked with a variety of
-            businesses, from small startups to large corporations.
+            I&apos;ve proven track record of success. I&apos;ve worked with a
+            variety of businesses, from small startups to large corporations.
           </span>
         </P1>
       </div>

@@ -3,7 +3,7 @@
 import React, { useState } from "react";
 import { P1, P3, TextHighlighter } from "@/components/common/TypoAndUtils";
 
-const ServiceCard = ({ service, index }) => {
+const ServiceCard = ({ service }) => {
   const [position, setPosition] = useState({ x: 0, y: 0 });
   const [isMouseOnCard, setIsMouseOnCard] = useState(false);
 
@@ -18,7 +18,6 @@ const ServiceCard = ({ service, index }) => {
 
   return (
     <div
-      key={index}
       className="group relative col-span-1 text-start rounded-3xl bg-gradient-to-br from-primary/5 via-secondary/5 to-base-100/5 bg-opacity-10 backdrop-blur-md"
       onMouseMove={handleMouseMove}
       onMouseEnter={() => setIsMouseOnCard(true)}
