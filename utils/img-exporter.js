@@ -155,7 +155,7 @@ export const services = [
       { text: "engages and persuades", highlight: true },
       { text: ". I create compelling narratives that ", highlight: false },
       { text: "connect with your audience", highlight: true },
-      { text: " and enhance your brand&apos;s ", highlight: false },
+      { text: " and enhance your brand's ", highlight: false },
       { text: "online footprint", highlight: true },
       { text: ".", highlight: false },
     ],

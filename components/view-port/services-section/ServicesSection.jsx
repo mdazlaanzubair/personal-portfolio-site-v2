@@ -12,7 +12,7 @@ const ServicesSection = () => {
         </div>
         <div className="max-w-3xl mx-auto">
           <P1>
-            I'm an expert in creating{" "}
+            I&apos;m an expert in creating{" "}
             <TextHighlighter>user-centered</TextHighlighter>,{" "}
             <TextHighlighter>visually appealing</TextHighlighter>, and{" "}
             <TextHighlighter>functional web applications</TextHighlighter> that
