@@ -5,14 +5,16 @@ const ProjectDiscussion = () => {
   return (
     <div
       id="call-to-action-1"
-      className="flex flex-col h-56 justify-center align-middle content-center items-center gap-3 bg-accent rounded-s-3xl"
+      className="flex flex-col h-56 justify-center align-middle content-center items-center gap-3 bg-accent rounded-e-3xl py-5"
     >
-      <H3>
-        <span className="text-slate-950 font-satoshi-black">
-          Ready to start your project? Let&apos;s talk!
-        </span>
-      </H3>
-      <div className="max-w-lg text-center">
+      <div className="max-w-lg md:max-w-2xl text-center px-5">
+        <H3>
+          <span className="text-slate-950 font-satoshi-black">
+            Ready to start your project? Let&apos;s talk!
+          </span>
+        </H3>
+      </div>
+      <div className="max-w-lg md:max-w-2xl text-center px-5">
         <P1>
           <span className="text-slate-950">
             I&apos;m passionate about helping businesses achieve their goals
