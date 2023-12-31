@@ -1,5 +1,5 @@
-import { ThemeProvider } from "../context/ThemeContext";
-import ThemeWrapper from "../context/ThemeWrapper";
+import { GlobalContextProvider } from "../context/GlobalContext";
+import GlobalContextWrapper from "../context/GlobalContextWrapper";
 import "./globals.css";
 
 export const metadata = {
@@ -12,9 +12,9 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
-        <ThemeProvider>
-          <ThemeWrapper>{children}</ThemeWrapper>
-        </ThemeProvider>
+        <GlobalContextProvider>
+          <GlobalContextWrapper>{children}</GlobalContextWrapper>
+        </GlobalContextProvider>
       </body>
     </html>
   );

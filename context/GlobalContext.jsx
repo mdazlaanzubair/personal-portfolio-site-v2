@@ -3,9 +3,9 @@
 import { createContext, useEffect, useState } from "react";
 import Loader from "../components/common/Loader";
 
-export const ThemeContext = createContext();
+export const GlobalContext = createContext();
 
-export const ThemeProvider = ({ children }) => {
+export const GlobalContextProvider = ({ children }) => {
   // THEME STATE
   const [isDark, setIsDark] = useState(true);
 
@@ -36,10 +36,13 @@ export const ThemeProvider = ({ children }) => {
     localStorage.setItem("isDark", !isDark);
   };
 
-  // RETURNING THEME CONTEXT PROVIDER
+  // RETURNING THEME CONTEXT PROVIDER WITH VALUES
+  const values = {
+    isDark,
+    changeTheme,
+  };
+
   return (
-    <ThemeContext.Provider value={{ isDark, changeTheme }}>
-      {children}
-    </ThemeContext.Provider>
+    <GlobalContext.Provider value={values}>{children}</GlobalContext.Provider>
   );
 };

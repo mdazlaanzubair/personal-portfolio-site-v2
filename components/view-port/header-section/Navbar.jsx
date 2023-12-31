@@ -5,7 +5,10 @@ import Link from "next/link";
 
 const Navbar = () => {
   return (
-    <div id="header-section" className="navbar bg-opacity-9">
+    <div
+      id="header-section"
+      className="fixed top-0 navbar w-100 z-50 px-3 sm:px-5 md:px-7 lg:px-10 bg-base-100 bg-opacity-75 backdrop-blur-sm"
+    >
       <div className="navbar-start">
         <Link href="#hero-section">
           <div className="container mx-auto text-center w-10 lg:w-10 relative">

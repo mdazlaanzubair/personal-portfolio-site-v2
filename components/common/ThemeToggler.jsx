@@ -1,10 +1,10 @@
 "use client";
 
-import { ThemeContext } from "@/context/ThemeContext";
+import { GlobalContext } from "@/context/GlobalContext";
 import React, { useContext } from "react";
 
 const ThemeToggler = () => {
-  const { changeTheme } = useContext(ThemeContext);
+  const { changeTheme } = useContext(GlobalContext);
 
   return (
     <label className="swap swap-rotate mx-3">
@@ -13,7 +13,7 @@ const ThemeToggler = () => {
 
       {/* sun icon */}
       <svg
-        className="swap-on fill-current w-6 h-6"
+        className="swap-on fill-current w-5 h-5 text-yellow-400"
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 24 24"
       >
@@ -22,7 +22,7 @@ const ThemeToggler = () => {
 
       {/* moon icon */}
       <svg
-        className="swap-off fill-current w-6 h-6"
+        className="swap-off fill-current w-5 h-5 text-yellow-400"
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 24 24"
       >

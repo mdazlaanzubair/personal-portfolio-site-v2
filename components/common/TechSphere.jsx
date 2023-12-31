@@ -1,10 +1,10 @@
 "use client";
 import React, { useContext, useEffect, useRef, useState } from "react";
-import { ThemeContext } from "@/context/ThemeContext";
+import { GlobalContext } from "@/context/GlobalContext";
 
 const TechSphere = ({ entries }) => {
   const svgRef = useRef(null);
-  const { isDark } = useContext(ThemeContext);
+  const { isDark } = useContext(GlobalContext);
   const [bgColor, setBgColor] = useState(null);
   const [tooltipFontColor, setTooltipFontColor] = useState(null);
   const [fontColor, setFontColor] = useState(null);
@@ -39,12 +39,12 @@ const TechSphere = ({ entries }) => {
   useEffect(() => {
     if (isDark) {
       setBgColor("#060918");
-      setTooltipFontColor("#F6F7FA")
-      setFontColor("#F6F7FA")
+      setTooltipFontColor("#F6F7FA");
+      setFontColor("#F6F7FA");
     } else {
       setBgColor("#F6F7FA");
-      setTooltipFontColor("#060918")
-      setFontColor("#060918")
+      setTooltipFontColor("#060918");
+      setFontColor("#060918");
     }
   }, [isDark]);
 
@@ -373,7 +373,12 @@ const TechSphere = ({ entries }) => {
     init();
   }, [entries, bgColor]);
 
-  return <svg ref={svgRef} className="rounded-3xl border-none border-transparent"></svg>;
+  return (
+    <svg
+      ref={svgRef}
+      className="rounded-3xl border-none border-transparent"
+    ></svg>
+  );
 };
 
 export default TechSphere;

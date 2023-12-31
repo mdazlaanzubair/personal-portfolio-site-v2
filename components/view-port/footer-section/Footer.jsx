@@ -4,7 +4,7 @@ import SocialMenu from "./SocialMenu";
 
 const Footer = () => {
   return (
-    <div className="navbar bg-opacity-9">
+    <div className="fixed bottom-0 navbar w-100 z-50 px-3 sm:px-5 md:px-7 lg:px-10 bg-base-100 bg-opacity-75 backdrop-blur-sm">
       <div className="hidden md:navbar-start">
         <SocialMenu />
       </div>

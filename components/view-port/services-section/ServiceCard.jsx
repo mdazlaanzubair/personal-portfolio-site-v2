@@ -2,13 +2,13 @@
 
 import React, { useContext, useEffect, useState } from "react";
 import { P1, P3, TextHighlighter } from "@/components/common/TypoAndUtils";
-import { ThemeContext } from "@/context/ThemeContext";
+import { GlobalContext } from "@/context/GlobalContext";
 
 const ServiceCard = ({ service }) => {
   const [position, setPosition] = useState({ x: 0, y: 0 });
   const [dynamicGradient, setDynamicGradient] = useState(null);
   const [isMouseOnCard, setIsMouseOnCard] = useState(false);
-  const { isDark } = useContext(ThemeContext);
+  const { isDark } = useContext(GlobalContext);
 
   const handleMouseMove = (e) => {
     const cardRect = e.currentTarget.getBoundingClientRect();
@@ -34,7 +34,7 @@ const ServiceCard = ({ service }) => {
 
   return (
     <div
-      className="relative col-span-1 text-start rounded-3xl bg-gradient-to-br from-primary/5 via-secondary/5 to-base-100/5 bg-opacity-10 backdrop-blur-md group-hover:blur-sm group-hover:scale-[.95] hover:!scale-100 hover:!blur-none transition-all ease-in-out duration-300"
+      className="relative cursor-pointer col-span-1 text-start rounded-3xl shadow-md backdrop-blur-[20px] backdrop-brightness-[100%] [-webkit-backdrop-filter:blur(20px)_brightness(100%)] [border-image:linear-gradient(to_bottom,rgba(246,247,250,0.04),rgba(246,247,250,0))_1] [background:linear-gradient(180deg,rgba(246,247,250,0.01)_0%,rgba(246,247,250,0.05)_100%)] group-hover:scale-[.95] hover:!scale-100 hover:!blur-none transition-all ease-in-out duration-300"
       onMouseMove={handleMouseMove}
       onMouseEnter={() => setIsMouseOnCard(true)}
       onMouseLeave={() => setIsMouseOnCard(false)}

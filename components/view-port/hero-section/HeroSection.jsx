@@ -10,29 +10,29 @@ import {
 
 const HeroSection = () => {
   return (
-    <div id="hero-section" className="hero min-h-screen">
-      <div className="hero-content flex-col text-center">
-        <div className="max-w-full">
-          <H1>Hi! I&apos;m Azlaan</H1>
-        </div>
-        <div className="max-w-2xl">
-          <H3>I offer User-Centric Solutions with Pixel-Powered Innovation</H3>
-        </div>
-        <div className="max-w-xl mx-auto">
-          <P1>
+    <section id="hero-section" className="hero min-h-screen">
+      <div className="hero-content">
+        <div className="max-w-full px-0 md:px-10 lg:px-20 gap-20">
+          <H1 className="max-w-lg my-5 mx-auto text-center">
+            Hi! I&apos;m Azlaan
+          </H1>
+          <H3 className="max-w-xl my-3 mx-auto text-center">
+            I offer User-Centric Solutions with Pixel-Powered Innovation
+          </H3>
+          <P1 className="max-w-2xl my-3 mx-auto text-center">
             I&apos;m a <TextHighlighter>software engineer</TextHighlighter>,
             specialized in building &amp; designing{" "}
             <TextHighlighter>things for web</TextHighlighter>. My aim is to help
             people establish{" "}
             <TextHighlighter>their online presence</TextHighlighter>.
           </P1>
-        </div>
-        <div className="max-w-xl mx-auto flex flex-row justify-center items-center gap-3">
-          <SolidButtonLink link="#contact-section" text="Hire me!" />
-          <LinkText link="#about-section" text="Explore more" />
+          <div className="max-w-2xl flex justify-center items-center gap-3">
+            <SolidButtonLink link="#contact-section" text="Hire me!" />
+            <LinkText link="#about-section" text="Explore more" />
+          </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

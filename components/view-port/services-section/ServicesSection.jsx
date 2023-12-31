@@ -1,28 +1,31 @@
 import React from "react";
-import { H1, P1, TextHighlighter } from "../../common/TypoAndUtils";
+import { H1, P1, P2, TextHighlighter } from "../../common/TypoAndUtils";
 import ServicesGrid from "./ServicesGrid";
 
 const ServicesSection = () => {
   return (
-    <div id="services-section" className="hero min-h-screen">
-      <div className="hero-content flex-col text-center pt-28 pb-20">
-        <div className="max-w-3xl">
-          <H1>I Offer Solutions that makes Difference</H1>
-        </div>
-        <div className="max-w-3xl mx-auto">
-          <P1>
-            I&apos;m an expert in creating{" "}
-            <TextHighlighter>user-centered</TextHighlighter>,{" "}
-            <TextHighlighter>visually appealing</TextHighlighter>, and{" "}
-            <TextHighlighter>functional web applications</TextHighlighter> that
-            align with <TextHighlighter>your brand identity</TextHighlighter>{" "}
-            and <TextHighlighter>drive business objectives</TextHighlighter>.
-          </P1>
-        </div>
+    <section id="services-section" className="hero min-h-screen">
+      <div className="hero-content py-20">
+        <div className="max-w-full flex flex-col justify-center items-center px-0 md:px-10 lg:px-20">
+          <div className="max-w-3xl">
+            <H1 className="max-w-full my-3 mx-auto text-center">
+              I offer solutions that makes difference
+            </H1>
+            <P1 className="max-w-2xl my-3 mx-auto text-center">
+              I&apos;m an expert in creating{" "}
+              <TextHighlighter>user-centered</TextHighlighter>,{" "}
+              <TextHighlighter>visually appealing</TextHighlighter>, and{" "}
+              <TextHighlighter>functional web applications</TextHighlighter>{" "}
+              that align with{" "}
+              <TextHighlighter>your brand identity</TextHighlighter> and{" "}
+              <TextHighlighter>drive business objectives</TextHighlighter>.
+            </P1>
+          </div>
 
-        <ServicesGrid />
+          <ServicesGrid />
+        </div>
       </div>
-    </div>
+    </section>
   );
 };
 

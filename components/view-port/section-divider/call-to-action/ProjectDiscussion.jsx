@@ -1,7 +1,7 @@
 import { H3, P1 } from "@/components/common/TypoAndUtils";
 import Link from "next/link";
 
-const HireMe = () => {
+const ProjectDiscussion = () => {
   return (
     <div
       id="call-to-action-1"
@@ -9,14 +9,14 @@ const HireMe = () => {
     >
       <H3>
         <span className="text-slate-950 font-satoshi-black">
-          Why should you hire me for your next project
+          Ready to start your project? Let&apos;s talk!
         </span>
       </H3>
       <div className="max-w-lg text-center">
         <P1>
           <span className="text-slate-950">
-            I&apos;ve proven track record of success. I&apos;ve worked with a
-            variety of businesses, from small startups to large corporations.
+            I&apos;m passionate about helping businesses achieve their goals
+            through exceptional web development.
           </span>
         </P1>
       </div>
@@ -33,4 +33,4 @@ const HireMe = () => {
   );
 };
 
-export default HireMe;
+export default ProjectDiscussion;

@@ -28,6 +28,12 @@ import WebDevIcon from "@/public/services-icons/web-dev-icon.svg";
 import WebScrapingIcon from "@/public/services-icons/web-scraping-icon.svg";
 import WritingIcon from "@/public/services-icons/writing-icon.svg";
 
+// PROJECT IMAGES
+import projectBgImg1 from "@/public/project-imgs/bg-1.jpg";
+import projectBgImg2 from "@/public/project-imgs/bg-2.jpg";
+import projectBgImg3 from "@/public/project-imgs/bg-3.jpg";
+import project from "@/public/project-imgs/project.jpg";
+
 // EXPORTING ALL LOGOS IN OBJECT FORM
 export const techLogos = {
   bard: bardLogo,
@@ -339,5 +345,54 @@ export const services = [
       { text: "high-quality organic traffic", highlight: true },
       { text: " to your site.", highlight: false },
     ],
+  },
+];
+
+// EXPORTING ALL FEATURED PROJECT IMAGES WITH THEIR RELEVANT CONTENT
+export const projects = [
+  {
+    title: "Project 1",
+    bgImg: projectBgImg1.src,
+    projectImg: project.src,
+    desc: [
+      { text: "Short description about ", highlight: false },
+      { text: "Project 1", highlight: true },
+      { text: ".", highlight: false },
+    ],
+    techs: ["React", "Mongo DB", "Prisma", "Tailwind"],
+    urls: {
+      live: "Live",
+      source: "Source Code",
+    },
+  },
+  {
+    title: "Project 2",
+    bgImg: projectBgImg2.src,
+    projectImg: project.src,
+    desc: [
+      { text: "Short description about ", highlight: false },
+      { text: "Project 2", highlight: true },
+      { text: ".", highlight: false },
+    ],
+    techs: ["React", "Mongo DB", "Prisma", "Tailwind"],
+    urls: {
+      live: "Live",
+      source: "Source Code",
+    },
+  },
+  {
+    title: "Project 3",
+    bgImg: projectBgImg3.src,
+    projectImg: project.src,
+    desc: [
+      { text: "Short description about ", highlight: false },
+      { text: "Project 3", highlight: true },
+      { text: ".", highlight: false },
+    ],
+    techs: ["React", "Mongo DB", "Prisma", "Tailwind"],
+    urls: {
+      live: "Live",
+      source: "Source Code",
+    },
   },
 ];

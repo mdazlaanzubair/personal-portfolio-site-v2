@@ -4,6 +4,7 @@ module.exports = {
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./node_modules/react-tailwindcss-select/dist/index.esm.js",
   ],
   theme: {
     extend: {
@@ -28,7 +29,6 @@ module.exports = {
   // daisyUI config (optional - here are the default values)
   daisyui: {
     themes: [
-      "winter",
       {
         light: {
           ...require("daisyui/src/theming/themes")["winter"],
@@ -36,25 +36,25 @@ module.exports = {
           primary: "#000000",
           secondary: "#555555",
           accent: "#6919FF",
-          neutral: "#919BBA",
-          "base-100": "#F6F7FA",
-          info: "#0284c7",
-          success: "#22c55e",
-          warning: "#ca8a04",
-          error: "#b91c1c",
+          // neutral: "#919BBA",
+          "base-100": "#f2f7ff",
+          // info: "#0284c7",
+          // success: "#22c55e",
+          // warning: "#ca8a04",
+          // error: "#b91c1c",
         },
         dark: {
           ...require("daisyui/src/theming/themes")["night"],
           // CUSTOM COLOR THEME
-          primary: "#F6F7FA",
-          secondary: "#919BBA",
+          primary: "#ffffff", // F6F7FA
+          secondary: "#999999", // 919BBA
           accent: "#6919FF",
-          neutral: "#03050c",
-          "base-100": "#060918",
-          info: "#0284c7",
-          success: "#22c55e",
-          warning: "#ca8a04",
-          error: "#b91c1c",
+          // neutral: "#03050c",
+          "base-100": "#050715",
+          // info: "#0284c7",
+          // success: "#22c55e",
+          // warning: "#ca8a04",
+          // error: "#b91c1c",
         },
       },
     ], // false: only light + dark | true: all themes | array: specific themes like this ["light", "dark", "cupcake"]
