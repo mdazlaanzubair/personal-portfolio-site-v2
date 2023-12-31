@@ -45,12 +45,12 @@ const NavMenu = () => {
         {nav_links?.map((link, index) => (
           <Link
             key={index}
-            onClick={() => setActiveLink(link?.title)}
             href={link?.url}
+            onClick={() => setActiveLink(link?.title)}
             className={`px-4 py-2 border-b-2 font-satoshi-medium text-sm ${
               link?.title == activeLink
                 ? "text-accent border-accent bg-accent bg-opacity-5"
-                : "text-secondary hover:text-primary bg-transparent border-transparent hover:border-secondary hover:bg-secondary hover:bg-opacity-5"
+                : "text-secondary bg-transparent border-transparent hover:text-primary hover:border-primary hover:bg-primary hover:bg-opacity-5"
             } transition-all ease-in-out duration-300`}
           >
             {link?.title}

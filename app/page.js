@@ -1,4 +1,3 @@
-import SideDrawer from "@/components/common/SideDrawer";
 import AboutSection from "@/components/view-port/about-section/AboutSection";
 import ContactSection from "@/components/view-port/contact-section/ContactSection";
 import Footer from "@/components/view-port/footer-section/Footer";
@@ -10,7 +9,6 @@ import KnowMe from "@/components/view-port/section-divider/call-to-action/KnowMe
 import ProjectDiscussion from "@/components/view-port/section-divider/call-to-action/ProjectDiscussion";
 import LogoSlider from "@/components/view-port/section-divider/logo-slider/LogoSlider";
 import ServicesSection from "@/components/view-port/services-section/ServicesSection";
-import { DrawerProvider } from "@/context/DrawerContext";
 
 export default function Home() {
   return (
@@ -19,10 +17,7 @@ export default function Home() {
         id="view-port"
         className="relative mx-auto max-h-screen overflow-y-scroll scroll-smooth"
       >
-        <DrawerProvider>
-          <Navbar />
-          <SideDrawer />
-        </DrawerProvider>
+        <Navbar />
         <HeroSection />
         <LogoSlider />
         <AboutSection />

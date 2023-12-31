@@ -30,7 +30,7 @@ const AboutSection = () => {
             ></div>
             <Animator animation={techie} className="w-2/3 mx-auto" />
           </div>
-          <div className="max-w-md">
+          <div className="w-full text-center lg:max-w-md lg:text-start">
             <H1 className="my-5">I&apos;m not just a techie;</H1>
             <P1 className="my-3">
               I understand your unique needs and translating them into intuitive
@@ -46,7 +46,7 @@ const AboutSection = () => {
               <TextHighlighter>UI/UX design</TextHighlighter> and{" "}
               <TextHighlighter>development</TextHighlighter>.
             </P2>
-            <div className="max-w-2xl flex justify-start items-center gap-3">
+            <div className="max-w-2xl flex justify-center lg:justify-start items-center gap-3">
               <SolidButtonLink link="#credentials" text="Credentials" />
               <LinkText link="#project-section" text="See my work" />
             </div>

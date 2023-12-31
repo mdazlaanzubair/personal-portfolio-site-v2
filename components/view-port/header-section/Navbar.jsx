@@ -1,9 +1,8 @@
 import React from "react";
 import NavMenu from "./NavMenu";
-import NavToggler from "./NavToggler";
 import Link from "next/link";
-import { SolidButtonLink } from "@/components/common/TypoAndUtils";
 import ThemeToggler from "@/components/common/ThemeToggler";
+import MobileMenu from "./MobileMenu";
 
 const Navbar = () => {
   return (
@@ -55,8 +54,8 @@ const Navbar = () => {
         </Link>
       </div>
       <div className="navbar-end">
-        <NavToggler />
         <NavMenu />
+        <MobileMenu />
       </div>
     </div>
   );
