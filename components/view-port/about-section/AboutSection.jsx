@@ -47,8 +47,8 @@ const AboutSection = () => {
               <TextHighlighter>development</TextHighlighter>.
             </P2>
             <div className="max-w-2xl flex justify-start items-center gap-3">
-              <SolidButtonLink link="#contact-section" text="Credentials" />
-              <LinkText link="#about-section" text="See my work" />
+              <SolidButtonLink link="#credentials" text="Credentials" />
+              <LinkText link="#project-section" text="See my work" />
             </div>
           </div>
         </div>

@@ -60,7 +60,7 @@ export const LinkText = ({ link, text, className }) => (
     className={`${className} group flex flex-col overflow-hidden`}
   >
     <span className="font-satoshi-medium text-sm text-accent">{text}</span>
-    <span className="w-full min-h-[.2rem] max-h-[.2rem] bg-accent m-0 -translate-x-3/4 group-hover:translate-x-0 transition-all ease-in-out duration-300"></span>
+    <span className="w-full min-h-[.1rem] max-h-[.1rem] bg-accent m-0 -translate-x-3/4 group-hover:translate-x-0 transition-all ease-in-out duration-300"></span>
   </Link>
 );
 

@@ -6,10 +6,10 @@ import { SolidButtonLink } from "../../common/TypoAndUtils";
 
 const NavMenu = () => {
   const nav_links = [
-    // {
-    //   title: "Home",
-    //   url: "#hero-section",
-    // },
+    {
+      title: "Home",
+      url: "#hero-section",
+    },
     {
       title: "About",
       url: "#about-section",
@@ -39,31 +39,9 @@ const NavMenu = () => {
   // STATE TO HOLD ACTIVE LINK
   const [activeLink, setActiveLink] = useState("Home");
 
-  const sections = useRef([]);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      const activeSection = sections.current.find((section) => {
-        return (
-          window.scrollY >= section.offsetTop &&
-          window.scrollY < section.offsetTop + section.offsetHeight
-        );
-      });
-
-      // Update link item classes based on activeSection
-      return activeSection;
-    };
-
-    window.addEventListener("scroll", handleScroll);
-    setActiveLink(handleScroll());
-
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
-
   return (
     <div className="hidden lg:flex flex-row justify-between items-center gap-3">
       <div className="flex flex-row justify-between items-center gap-0">
-        {activeLink}
         {nav_links?.map((link, index) => (
           <Link
             key={index}
@@ -79,7 +57,6 @@ const NavMenu = () => {
           </Link>
         ))}
       </div>
-      <SolidButtonLink text="Let's Talk" link="/" />
     </div>
   );
 };

@@ -25,7 +25,7 @@ const HireMe = () => {
 
       <div className="max-w-xl mx-auto flex flex-row justify-center items-center gap-3">
         <Link
-          href="/"
+          href="#"
           className="font-satoshi-bold bg-slate-950 px-5 py-2 rounded-sm text-sm text-accent hover:text-slate-100 transition-all ease-in-out duration-300"
         >
           Book a call
