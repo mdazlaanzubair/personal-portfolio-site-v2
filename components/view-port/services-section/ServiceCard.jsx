@@ -34,7 +34,7 @@ const ServiceCard = ({ service }) => {
 
   return (
     <div
-      className="relative cursor-pointer col-span-1 text-start rounded-3xl shadow-md backdrop-blur-[20px] backdrop-brightness-[100%] [-webkit-backdrop-filter:blur(20px)_brightness(100%)] [border-image:linear-gradient(to_bottom,rgba(246,247,250,0.04),rgba(246,247,250,0))_1] [background:linear-gradient(180deg,rgba(246,247,250,0.01)_0%,rgba(246,247,250,0.05)_100%)] group-hover:scale-[.95] hover:!scale-100 hover:!blur-none transition-all ease-in-out duration-300"
+      className="relative cursor-pointer col-span-1 text-start rounded-3xl shadow hover:shadow-md transition-all ease-in-out duration-300"
       onMouseMove={handleMouseMove}
       onMouseEnter={() => setIsMouseOnCard(true)}
       onMouseLeave={() => setIsMouseOnCard(false)}
@@ -47,7 +47,7 @@ const ServiceCard = ({ service }) => {
       />
       <div className="card card-compact m-5">
         <div className="card-body relative">
-          <figure className="w-16 h-16 bg-accent shadow-glow rounded-xl text-center mb-5">
+          <figure className="w-16 h-16 bg-accent rounded-xl text-center mb-5">
             <img
               src={service?.icon}
               className="w-7 h-7 mx-auto"

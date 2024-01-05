@@ -20,7 +20,7 @@ const ContactCard = () => {
   ];
 
   return (
-    <div className="card w-full shadow-lg">
+    <div className="card w-full shadow-lg bg-gradient-to-br from-base-100/100 to-base-100">
       <form className="card-body">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-start">
           <div className="col-span-1">

@@ -15,7 +15,7 @@ const ProjectContent = ({ techs, desc, sourceUrl, liveUrl, title, count }) => {
         count === 1
           ? "-translate-y-4 lg:-translate-y-0 lg:translate-x-4"
           : "-translate-y-4 lg:-translate-y-0 lg:-translate-x-4"
-      } rounded-3xl shadow-md backdrop-blur-[20px] backdrop-brightness-[100%] [-webkit-backdrop-filter:blur(20px)_brightness(100%)] [border-image:linear-gradient(to_bottom,rgba(246,247,250,0.04),rgba(246,247,250,0))_1] [background:linear-gradient(180deg,rgba(246,247,250,0.01)_0%,rgba(246,247,250,0.05)_100%)]`}
+      } rounded-3xl shadow-md bg-gradient-to-br from-transparent to-base-100 bg-opacity-40 backdrop-blur-md`}
     >
       <div className="card card-compact m-5">
         <div className="card-body relative">

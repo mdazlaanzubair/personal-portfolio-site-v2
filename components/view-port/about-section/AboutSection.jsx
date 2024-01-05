@@ -19,7 +19,7 @@ const AboutSection = () => {
   };
 
   return (
-    <section id="about-section" className="hero min-h-screen">
+    <section id="about-section" className="relative hero min-h-screen">
       <div className="hero-content">
         <div className="max-w-full flex flex-col lg:flex-row-reverse px-0 md:px-10 lg:px-20 gap-20">
           <div className="relative hidden md:flex">

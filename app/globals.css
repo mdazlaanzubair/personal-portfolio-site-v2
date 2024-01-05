@@ -4,7 +4,7 @@
 @tailwind utilities;
 
 /* INITIALIZING CUSTOM FONT FACE */
-@font-face {
+/* @font-face {
   font-family: "Satoshi Black";
   src: url("../public/fonts/WOFF/Satoshi-Black.woff"),
     url("../public/fonts/WOFF2/Satoshi-Black.woff2"),
@@ -37,7 +37,7 @@
   src: url("../public/fonts/WOFF/Satoshi-Light.woff"),
     url("../public/fonts/WOFF2/Satoshi-Light.woff2"),
     url("../public/fonts/OTF/Satoshi-Light.otf");
-}
+} */
 
 html,
 body {
@@ -84,4 +84,3 @@ body::-webkit-scrollbar {
     display: none;
   }
 }
-

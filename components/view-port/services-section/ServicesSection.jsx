@@ -4,7 +4,8 @@ import ServicesGrid from "./ServicesGrid";
 
 const ServicesSection = () => {
   return (
-    <section id="services-section" className="hero min-h-screen">
+    <section id="services-section" className="relative hero min-h-screen">
+      <div className="absolute w-[70rem] h-[70rem] bg-accent rounded-full left-1/2 -translate-x-1/2 -top-[40rem] mix-blend-screen blur-3xl opacity-10"></div>
       <div className="hero-content py-20">
         <div className="max-w-full flex flex-col justify-center items-center px-0 md:px-10 lg:px-20">
           <div className="max-w-3xl">

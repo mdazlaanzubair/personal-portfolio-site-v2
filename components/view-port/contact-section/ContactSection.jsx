@@ -12,7 +12,8 @@ import {
 
 const ContactSection = () => {
   return (
-    <section id="contact-section" className="hero min-h-screen my-20">
+    <section id="contact-section" className="relative hero min-h-screen my-20">
+      <div className="absolute w-[70rem] h-[70rem] bg-accent rounded-full left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 mix-blend-screen blur-3xl opacity-10"></div>
       <div className="hero-content">
         <div className="max-w-full flex flex-col justify-center items-center px-0 md:px-10 lg:px-20 gap-20">
           <div className="max-w-3xl">

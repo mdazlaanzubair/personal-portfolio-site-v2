@@ -10,7 +10,8 @@ import {
 
 const HeroSection = () => {
   return (
-    <section id="hero-section" className="hero min-h-screen">
+    <section id="hero-section" className="relative hero min-h-screen">
+      <div className="absolute w-[70rem] h-[70rem] bg-accent rounded-full left-1/2 -translate-x-1/2 -top-[40rem] mix-blend-screen blur-3xl opacity-10"></div>
       <div className="hero-content">
         <div className="max-w-full px-0 md:px-10 lg:px-20 gap-20">
           <H1 className="max-w-lg my-5 mx-auto text-center">

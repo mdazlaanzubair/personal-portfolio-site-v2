@@ -12,18 +12,18 @@ import ServicesSection from "@/components/view-port/services-section/ServicesSec
 
 export default function Home() {
   return (
-    <main className="m-0 min-w-full min-h-screen overflow-hidden">
+    <main className="relative m-0 min-w-full min-h-screen overflow-hidden bg-gradient-to-br bg-base-100">
       <div
         id="view-port"
         className="relative mx-auto max-h-screen overflow-y-scroll scroll-smooth"
       >
-        <Navbar />
         <HeroSection />
-        <LogoSlider />
+        <Navbar />
         <AboutSection />
-        <KnowMe />
+        <LogoSlider />
         <ServicesSection />
-        <HireMe />
+        <KnowMe />
+        {/* <HireMe /> */}
         <ProjectsSection />
         <ProjectDiscussion />
         <ContactSection />

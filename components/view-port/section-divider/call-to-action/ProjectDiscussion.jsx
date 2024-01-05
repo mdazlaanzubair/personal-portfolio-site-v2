@@ -5,7 +5,7 @@ const ProjectDiscussion = () => {
   return (
     <div
       id="call-to-action-1"
-      className="flex flex-col h-56 justify-center align-middle content-center items-center gap-3 bg-accent rounded-e-3xl py-5"
+      className="flex flex-col h-56 justify-center align-middle content-center items-center gap-3 bg-accent rounded-s-3xl py-5"
     >
       <div className="max-w-lg md:max-w-2xl text-center px-5">
         <H3>

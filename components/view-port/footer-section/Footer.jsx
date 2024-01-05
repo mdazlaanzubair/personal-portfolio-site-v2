@@ -6,7 +6,7 @@ import MobileSocialMenu from "./MobileSocialMenu";
 
 const Footer = () => {
   return (
-    <div className="fixed bottom-0 navbar w-100 z-50 px-3 sm:px-5 md:px-7 lg:px-10 bg-base-100 bg-opacity-75 backdrop-blur-sm">
+    <div className="navbar w-100 z-50 px-3 sm:px-5 md:px-7 lg:px-10 backdrop-blur-sm">
       <div className="navbar-start">
         <MobileSocialMenu />
         <SocialMenu />
