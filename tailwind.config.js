@@ -33,7 +33,7 @@ module.exports = {
         light: {
           ...require("daisyui/src/theming/themes")["winter"],
           // CUSTOM COLOR THEME
-          primary: "#000000",
+          primary: "#050715",
           secondary: "#555555",
           accent: "#6919FF",
           // neutral: "#919BBA",
@@ -46,7 +46,7 @@ module.exports = {
         dark: {
           ...require("daisyui/src/theming/themes")["night"],
           // CUSTOM COLOR THEME
-          primary: "#ffffff", // F6F7FA
+          primary: "#eaecfa", // F6F7FA
           secondary: "#999999", // 919BBA
           accent: "#6919FF",
           // neutral: "#03050c",

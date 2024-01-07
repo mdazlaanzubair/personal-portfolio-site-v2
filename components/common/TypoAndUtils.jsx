@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export const H1 = ({ children, className }) => (
   <h1
-    className={`${className} font-black text-3xl md:text-5xl lg:text-7xl bg-gradient-to-b from-primary via-primary to-secondary text-transparent bg-clip-text`}
+    className={`${className} font-black text-3xl md:text-5xl lg:text-7xl bg-gradient-to-b from-primary via-primary to-primary text-transparent bg-clip-text`}
   >
     {children}
   </h1>
@@ -10,7 +10,7 @@ export const H1 = ({ children, className }) => (
 
 export const H2 = ({ children, className }) => (
   <h2
-    className={`${className} font-bold text-2xl md:text-4xl lg:text-5xl bg-gradient-to-b from-primary via-primary to-secondary text-transparent bg-clip-text`}
+    className={`${className} font-bold text-2xl md:text-4xl lg:text-5xl bg-gradient-to-b from-primary via-primary to-primary text-transparent bg-clip-text`}
   >
     {children}
   </h2>
