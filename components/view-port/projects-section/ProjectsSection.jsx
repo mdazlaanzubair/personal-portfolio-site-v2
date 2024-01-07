@@ -9,17 +9,17 @@ const ProjectsSection = () => {
     <section id="project-section" className="relative hero min-h-screen">
       <img
         src={projectBgImg1.src}
-        className="absolute w-[30rem] h-[30rem] rounded-full -right-[10rem] top-[0rem] mix-blend-screen blur-3xl opacity-20"
+        className="absolute w-[30rem] h-[30rem] rounded-full -right-[5rem] top-[15rem] mix-blend-screen blur-3xl opacity-20"
         alt="sphere"
       />
       <img
         src={projectBgImg1.src}
-        className="absolute w-[30rem] h-[30rem] rounded-full -left-[10rem] bottom-[40rem] mix-blend-screen blur-3xl opacity-20"
+        className="absolute w-[30rem] h-[30rem] rounded-full -left-[5rem] bottom-[35rem] mix-blend-screen blur-3xl opacity-20"
         alt="sphere"
       />
       <img
         src={projectBgImg1.src}
-        className="absolute w-[30rem] h-[30rem] rounded-full -right-[10rem] bottom-[0rem] mix-blend-screen blur-3xl opacity-20"
+        className="absolute w-[30rem] h-[30rem] rounded-full -right-[10rem] bottom-[5rem] mix-blend-screen blur-3xl opacity-20"
         alt="sphere"
       />
       <div className="hero-content py-20">

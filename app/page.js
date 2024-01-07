@@ -15,7 +15,7 @@ export default function Home() {
     <main className="relative m-0 min-w-full min-h-screen overflow-hidden bg-gradient-to-br bg-base-100">
       <div
         id="view-port"
-        className="relative mx-auto max-h-screen overflow-y-scroll scroll-smooth"
+        className="relative mx-auto max-h-screen overflow-x-hidden overflow-y-scroll scroll-smooth"
       >
         <HeroSection />
         <Navbar />

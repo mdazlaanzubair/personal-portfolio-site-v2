@@ -45,7 +45,7 @@ export const P3 = ({ children, className }) => (
 );
 
 export const TextHighlighter = ({ children, className }) => (
-  <span className={`${className} font-bold text-primary`}>{children}</span>
+  <span className={`${className} text-primary`}>{children}</span>
 );
 
 export const LinkText = ({ link, text, className }) => (

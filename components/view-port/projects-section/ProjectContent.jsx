@@ -13,9 +13,9 @@ const ProjectContent = ({ techs, desc, sourceUrl, liveUrl, title, count }) => {
     <div
       className={`w-full lg:w-2/4 h-3/4 ${
         count === 1
-          ? "-translate-y-4 lg:-translate-y-0 lg:translate-x-4"
-          : "-translate-y-4 lg:-translate-y-0 lg:-translate-x-4"
-      } rounded-3xl shadow-md bg-gradient-to-br from-transparent to-base-100 bg-opacity-40 backdrop-blur-md`}
+          ? "-translate-y-4 lg:-translate-y-0 lg:translate-x-4 from-base-100 to-transparent"
+          : "-translate-y-4 lg:-translate-y-0 lg:-translate-x-4 from-transparent to-base-100"
+      } rounded-3xl shadow-md bg-gradient-to-r backdrop-blur-sm`}
     >
       <div className="card card-compact m-5">
         <div className="card-body relative">

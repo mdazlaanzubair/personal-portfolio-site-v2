@@ -27,14 +27,14 @@ const ServiceCard = ({ service }) => {
       });
     } else {
       setDynamicGradient({
-        background: `radial-gradient(circle at ${position.x}px ${position.y}px, rgba(0, 0, 0, .1) 7%, transparent, transparent )`,
+        background: `radial-gradient(circle at ${position.x}px ${position.y}px, rgba(0, 0, 0, .1) 7%, transparent,  transparent )`,
       });
     }
   }, [position, isDark]);
 
   return (
     <div
-      className="relative cursor-pointer col-span-1 text-start rounded-3xl shadow hover:shadow-md transition-all ease-in-out duration-300"
+      className="relative col-span-1 text-start rounded-3xl bg-accent bg-opacity-5 backdrop-blur-md shadow transition-all ease-in-out duration-300"
       onMouseMove={handleMouseMove}
       onMouseEnter={() => setIsMouseOnCard(true)}
       onMouseLeave={() => setIsMouseOnCard(false)}
